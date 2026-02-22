@@ -823,3 +823,33 @@ Must link to the **pull request**, not the repository or branch!
 ---
 
 **Remember**: Quality over quantity. Take your time, be thorough, and use your own expertise!
+
+
+
+This is the session code (the code that you have to put into cli after the authentication code):
+
+cc_agentic_coding
+
+
+use this command after you put the claude-hfi tool in your repo directory - this tool makes the tool executable, so it is required to run:
+
+chmod +x claude-hfi
+
+
+launch the claude-hfi tool (only first time in a repo):
+
+./claude-hfi --vscode
+
+
+
+if you exit a session in between work - use this command to continue:
+
+./claude-hfi --continue --vscode
+
+
+
+BEFORE giving your first prompt, you must run this in the A/B trajectories respectively. Replce <> with the session code. MUST run:
+
+tmux attach -t <>-A
+
+tmux attach -t <>-B
